@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fin Kicks Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-menu" id="mainMenu">
+        <h1>Scuba Diver Game</h1>
+        <div class="rules">
+            <h2>Rules</h2>
+            <p>Gain points by collecting clown fish <img src="images/clown-fish.png" alt="Clown Fish" class="rule-image">, nudibranchs <img src="images/nudibranch.png" alt="nudibranch" class="rule-image">, starfish <img src="images/starfish.png" alt="starfish" class="rule-image"> and shells <img src="images/shell.png" alt="shell" class="rule-image">.</p>
+            <p>Gain double points by collecting rubbish (plastic bottle<img src="images/plastic.png" alt="Plastic Bottle" class="rule-image">, nets <img src="images/net.png" alt="nets" class="rule-image"> and cans <img src="images/can.png" alt="Cans" class="rule-image"> ).</p>
+            <p>Lose points by hitting ship wrecks <img src="images/ship-wreck.png" alt="Ship Wreck" class="rule-image">, sharks <img src="images/shark.png" alt="Sharks" class="rule-image">, jelly fish <img src="images/jelly-fish.png" alt="jelly-fish" class="rule-image">and eels <img src="images/eel.png" alt="eels" class="rule-image">.</p>
+            <p>Use the arrow keys to move the scuba diver <img src="images/ship-wreck.png" alt="Ship Wreck" class="rule-image">.</p>
+            <br><br><p>Win the game by reaching 25 points.</p>
+            <br><br><p>It is game over if you hit the ammunition or your score reaches -10 points.</p>
+        </div>
+        <button onclick="startGame()">Play</button>
+        <button onclick="exitGame()">Exit</button>
+    </div>
+    <div class="game-container" id="gameContainer" style="display: none;">
+        <div class="scuba-diver" id="scubaDiver"></div>
+        <div class="score" id="score">Score: 0</div>
+    </div>
+
+    <div class="summary" id="summary" style="display: none;">
+        <h2>Game Summary</h2>
+        <div id="summaryContent"></div>
+        <button onclick="restartGame()">Restart</button>
+    </div>
+    
+    <script src="finkicks.js"></script>
+</body>
+</html>
